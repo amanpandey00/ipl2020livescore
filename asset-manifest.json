@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ipl2020livescore/static/css/main.fcf0b8e2.chunk.css",
+    "main.js": "/ipl2020livescore/static/js/main.c4fcdaca.chunk.js",
+    "main.js.map": "/ipl2020livescore/static/js/main.c4fcdaca.chunk.js.map",
+    "runtime-main.js": "/ipl2020livescore/static/js/runtime-main.7af5af21.js",
+    "runtime-main.js.map": "/ipl2020livescore/static/js/runtime-main.7af5af21.js.map",
+    "static/js/2.aac91936.chunk.js": "/ipl2020livescore/static/js/2.aac91936.chunk.js",
+    "static/js/2.aac91936.chunk.js.map": "/ipl2020livescore/static/js/2.aac91936.chunk.js.map",
+    "static/js/3.fb0353b3.chunk.js": "/ipl2020livescore/static/js/3.fb0353b3.chunk.js",
+    "static/js/3.fb0353b3.chunk.js.map": "/ipl2020livescore/static/js/3.fb0353b3.chunk.js.map",
+    "index.html": "/ipl2020livescore/index.html",
+    "static/css/main.fcf0b8e2.chunk.css.map": "/ipl2020livescore/static/css/main.fcf0b8e2.chunk.css.map",
+    "static/js/2.aac91936.chunk.js.LICENSE.txt": "/ipl2020livescore/static/js/2.aac91936.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ipl2020livescore/static/media/logo.6ce24c58.svg",
+    "static/media/vs-img.1fee9b0b.png": "/ipl2020livescore/static/media/vs-img.1fee9b0b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7af5af21.js",
+    "static/js/2.aac91936.chunk.js",
+    "static/css/main.fcf0b8e2.chunk.css",
+    "static/js/main.c4fcdaca.chunk.js"
+  ]
+}
