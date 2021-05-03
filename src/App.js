@@ -1,23 +1,42 @@
+import React, { Fragment, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button, Grid, Typography } from '@material-ui/core';
+import Navbar from './components/Navbar';
+import MatchInfo from './components/MatchInfo';
+import { getMathes } from './api/API';
 
 function App() {
+
+  const [matches, setMatches] = useState([]);
+
+  useEffect(() => {
+    getMathes()
+      .then((data) => {
+        setMatches(data.matches);
+      })
+      .catch((error) => console.log("Could not load Data"));
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Typography variant="h4" style={{marginTop: 20}}>Welcome To IPL 2021 Live Score</Typography>
+      <Grid container>
+        <Grid sm="2"></Grid>
+          <Grid sm="8">
+            {
+              matches.map((match) => (
+                <Fragment key={match.unique_id}>
+                  {
+                    (match.type=="" ? (<MatchInfo  match={match} />) : (""))
+                  }
+                </Fragment>
+              ))
+            }
+        </Grid>
+      </Grid>
+      {}
     </div>
   );
 }
